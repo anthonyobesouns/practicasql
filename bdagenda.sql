@@ -12,8 +12,7 @@ CREATE TABLE agenda
   telefmovi                  VARCHAR(9),
   email                      VARCHAR(30),
   fbc                        VARCHAR(30),
-  CONSTRAINT agenda_codigoper_pk PRIMARY KEY (codigo_per)
- );
+  CONSTRAINT agenda_codigoper_pk PRIMARY KEY (codigo_per));
 
 INSERT INTO agenda VALUES ('1', 'carlos', 'serna','av. palmeras 145',
 '043524875', '942587568','carlos@hotmail.com', 'carlos serna');
