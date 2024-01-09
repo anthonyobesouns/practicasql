@@ -26,12 +26,8 @@ CREATE TABLE agenda
   fbc                        VARCHAR(30),
   distrito                   VARCHAR(3),
   CONSTRAINT agenda_codigoper_pk PRIMARY KEY (codigoper),
+  CONSTRAINT fk_distrito FOREIGN KEY (distrito) REFERENCES distrito(codigo)
  );
-
-ALTER TABLE agenda
-ADD CONSTRAINT fk_distrito
-FOREIGN KEY (distrito)
-REFERENCES distrito(codigo);
 
 INSERT INTO agenda VALUES ('1', 'carlos', 'serna','av. palmeras 145',
 '043524875', '942587568','carlos@hotmail.com', 'carlos serna',1);
