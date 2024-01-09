@@ -4,7 +4,7 @@ USE BASEDATOS;
 
 DROP TABLE IF EXISTS distrito;
 
-CREATE TABLE IF EXISTS distrito
+CREATE TABLE distrito
 (codigo VARCHAR(3)  NOT NULL,
  nombre VARCHAR(30),
  CONSTRAINT tabla_codigoper_pk PRIMARY KEY (codigo)
